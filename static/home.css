@@ -1,0 +1,125 @@
+body {
+    width:100%;
+    margin:0;
+    background-color: #1c1d21;
+    font-family: serif sans-serif;
+    overflow: scroll;
+}
+
+.nav{
+    width: 80%;
+    margin: 0 auto;
+    margin-right: 20px;
+}
+nav{
+    float: right;
+
+}
+nav ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 40px;
+
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    color: #75e6da;
+}
+
+.page{
+    display: flex;
+    max-width: 1264px;
+    width: 100%;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    margin: 0 auto;
+    
+}
+.home{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+.main-text h1{
+    color: white;
+    font-size: 36px;
+    padding: 0;
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.main-text p{
+    color: #8892b0;
+    font-size: 24px;
+    padding: 0;
+    display:block;
+    margin-top: 5px;
+}
+
+.b button{
+    border: 2px solid #75e6da;
+    border-radius: 7px;
+    background-color: transparent;
+    color: #75e6da;
+    height: 40px;
+    width: 120px;
+}
+
+.b button:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+ 
+}
+
+.about{
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.top-text h1{
+    color:#75e6da;
+}
+
+.top-text p{
+    color:white;
+}
+
+@media screen and (max-width: 2000px ){
+    .about{
+        left:32%;
+    }
+    
+}
+
+.picture{
+    background-image: url("/portfolio/pictures/Ryan.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translateX(-27%) translateY(10%);
+}
